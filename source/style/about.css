@@ -1,0 +1,375 @@
+.aboutHero {
+  display: flex;
+  background: linear-gradient(
+    289.64deg,
+    #99e2b4 -0.35%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 100%;
+  height: 120vh;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.aboutCont {
+  padding: 20px;
+  max-width: 500px;
+}
+.title {
+  font-size: 40px;
+  line-height: 60px;
+  color: #363940;
+}
+.aboutPara {
+  font-size: 26px;
+  line-height: 39px;
+  color: #363940;
+}
+.aboutDisp {
+  width: auto;
+}
+.imgBox {
+  position: relative;
+  height: 510px;
+  width: 500px;
+}
+
+.groupimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.groupimg1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 90%;
+  height: 90%;
+  z-index: 0;
+}
+
+.imgTweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 80px;
+  left: 140px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  height: 320px;
+  width: 230px;
+  z-index: 0;
+}
+
+.row1 {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.row2 {
+  padding: 10px;
+}
+.row3 {
+  padding: 10px;
+}
+.twtbg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.twtbg img {
+  width: 100%;
+  height: 100%;
+}
+
+.twtbg h2 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: white;
+}
+
+/*mission$vision*/
+.aboutHero1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  padding-top: 200px !important;
+  padding: 50px;
+}
+.mission img,
+.vision img {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
+.mission,
+.vision {
+  display: flex;
+  max-width: 500px;
+  height: 300px;
+}
+.cov {
+  padding: 0 10px;
+}
+.cov h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #363940;
+}
+.cov p {
+  font-size: 22px;
+  line-height: 33px;
+  color: #363940;
+}
+
+.aboutHero2 {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+.cover1 {
+  height: auto;
+  max-width: 1200px;
+  background: rgba(213, 245, 224, 0.72);
+  border-radius: 20px;
+  padding: 20px;
+}
+.aboutHero2 .cover1 .cov {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: #242424;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+}
+footer .img .social {
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+  cursor: pointer;
+}
+footer ul li {
+  color: #f0fff3;
+  margin: 10px;
+  font-size: 16px;
+}
+footer a {
+  color: #f0fff3;
+}
+.copy {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .log {
+  color: #f0fff3;
+  font-family: "Proza Libre", sans-serif;
+  margin: 10px 15px;
+  font-size: 25px;
+}
+.image {
+  width: 30vw;
+  min-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 550px) {
+    .aboutHero2{
+        padding: 10px;
+    }
+    .cover1{
+        padding:10px;
+    }
+}
+@media (max-width: 990px) {
+  .aboutHero {
+    display: flex;
+    flex-direction: column-reverse;
+    background: linear-gradient(
+      289.64deg,
+      #99e2b4 -0.35%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    width: 100%;
+    height: 180vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .aboutCont {
+    padding: 20px;
+    max-width: auto;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 50px;
+    color: #363940;
+  }
+  .aboutPara {
+    font-size: 19px;
+    line-height: 35px;
+    color: #363940;
+  }
+  .aboutDisp {
+    width: auto;
+  }
+  .imgBox {
+    position: relative;
+    height: 100vw;
+    width: 100vw;
+    margin: 0px;
+    overflow: hidden;
+  }
+
+  .groupimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  .groupimg1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .imgTweet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    height: 250px;
+    width: 190px;
+    z-index: 0;
+  }
+
+  .row1 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .row2 {
+    padding: 10px;
+  }
+  .row3 {
+    padding: 10px 0;
+  }
+
+  /*mission$vision*/
+  .aboutHero1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 60px !important;
+    padding: 30px;
+  }
+  .mission img,
+  .vision img {
+    height: 40px;
+    width: 40px;
+  }
+  .mission,
+  .vision {
+    display: flex;
+    max-width: 500px;
+    height: 250px;
+  }
+  .cov {
+    padding: 0 10px;
+  }
+  .cov h2 {
+    font-size: 30px;
+    color: #363940;
+  }
+  .cov p {
+    font-size: 20px;
+    line-height: 33px;
+    color: #363940;
+  }
+
+  .aboutHero2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cover1 {
+    height: auto;
+    max-width: 90%;
+    background: rgba(213, 245, 224, 0.72);
+    border-radius: 20px;
+  }
+  .aboutHero2 .cover1 .cov {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  footer .log {
+    color: #f0fff3;
+    font-family: "Proza Libre", sans-serif;
+    margin: 10px 20px;
+    font-size: 20px;
+  }
+  footer ul {
+    padding: 10px;
+  }
+  footer ul li {
+    color: #f0fff3;
+    margin: 10px;
+    font-size: 13px;
+  }
+  .img {
+    padding: 10px;
+  }
+}

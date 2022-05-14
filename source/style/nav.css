@@ -1,0 +1,459 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Reem Kufi;
+  font-style: normal;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Reem Kufi", sans-serif;
+  background-color: #f0fff3;
+}
+
+@keyframes trans {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+::selection {
+  background: #48297a;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: #f0fff3;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+label.logo {
+  color: rgb(53, 53, 53);
+  font-family: "Proza Libre", sans-serif;
+  font-size: 35px;
+  position: absolute;
+  margin: 40px 60px;
+}
+
+.nav {
+  display: flex;
+  margin: 10px 40px;
+  padding: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: max-content;
+}
+
+.nav a {
+  color: rgb(53, 53, 53);
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+}
+.nav a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #363940;
+  transition: width 0.3s;
+}
+.nav a:hover::after {
+  width: 80%;
+}
+.contact_li #contact_btn {
+  background-color: #363940;
+  line-height: 101px;
+  width: 180px;
+  height: 80px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.contact_li #contact_btn a {
+  text-decoration: none;
+  color: #f0fff3 !important;
+}
+.btn {
+  display: none;
+}
+
+#foot {
+  background: #172334;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#foot span {
+  color: #2a384b;
+}
+.quote {
+  letter-spacing: 2px;
+  font-size: 35px;
+  color: #606771;
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.incrix {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+.incrix h1 {
+  font-size: 25px;
+  color: #cecccc;
+}
+.footer h2 {
+  font-size: 14px;
+  color: #cecccc;
+}
+.ancor {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  align-items: flex-end;
+}
+.ancor a {
+  margin: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #cecccc;
+}
+.footer .quick {
+  display: block;
+}
+.foot_logo h1 {
+  font-size: 30px !important;
+  color: #cecccc;
+  font-family: "Proza Libre", sans-serif;
+}
+.foot_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+.foot_logo a,
+.foot_logo p {
+  margin: 10px 0 0 0;
+  font-size: 10px;
+  color: #cecccc;
+}
+@keyframes back {
+  10% {
+    background-position: 2000px 0;
+  }
+}
+
+@media (min-width: 1450px) {
+  .nav {
+    display: flex;
+    margin: 10px 40px;
+  }
+
+  .label.logo {
+    position: absolute;
+    margin: 50px 60px;
+  }
+
+  .nav a {
+    font-size: 24px;
+    line-height: 24px;
+    color: #4f4f4f;
+    padding: 10px;
+    margin: 15px;
+  }
+
+  .nav .contact_btn {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+  }
+  .nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right: -800px;
+    background: rgb(53, 53, 53);
+    color: #ffffff !important;
+    z-index: 1099;
+    align-items: center;
+    justify-content: center;
+  }
+  .ham {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 25px;
+    top: 17px;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hambar {
+    height: 4px;
+    width: 40px;
+    border-radius: 5px;
+    background: rgb(53, 53, 53);
+    transition: all 0.5s ease-in-out;
+  }
+  .hambar::before,
+  .hambar::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: rgb(53, 53, 53);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .hambar::before {
+    transform: translateY(-12px);
+  }
+
+  .hambar::after {
+    transform: translateY(12px);
+  }
+
+  .ham.open .hambar {
+    transform: translateX(-50px);
+    background: transparent;
+  }
+
+  .ham.open .hambar::before {
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .ham.open .hambar::after {
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .ham.open .nav {
+    position: fixed;
+    left: 10px;
+  }
+
+  label.logo {
+    position: absolute;
+    left: 0;
+    display: block;
+    margin: 20px 20px;
+    height: 27px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 37px;
+    color: #ffffff;
+    padding: 10px;
+    margin: 15px;
+    width: max-content;
+  }
+  .nav .contact_btn {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    background: rgb(53, 53, 53);
+    border-radius: 10px;
+  }
+  .contact_li {
+    display: none;
+  }
+  .btn {
+    display: block;
+  }
+}
+
+@media (max-width: 1020px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right: -1200px;
+    background: rgb(53, 53, 53);
+    color: #ffffff !important;
+    z-index: 99;
+    align-items: center;
+  }
+  .ham {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 25px;
+    top: 17px;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hambar {
+    height: 4px;
+    width: 40px;
+    border-radius: 5px;
+    background: rgb(53, 53, 53);
+    transition: all 0.5s ease-in-out;
+  }
+  .hambar::before,
+  .hambar::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: rgb(53, 53, 53);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .hambar::before {
+    transform: translateY(-12px);
+  }
+
+  .hambar::after {
+    transform: translateY(12px);
+  }
+
+  .ham.open .hambar {
+    transform: translateX(-50px);
+    background: transparent;
+  }
+
+  .ham.open .hambar::before {
+    background: rgb(255, 255, 255);
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .ham.open .hambar::after {
+    background: rgb(255, 255, 255);
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .ham.open .nav {
+    position: fixed;
+    left: 10px;
+  }
+
+  label.logo {
+    position: absolute;
+    left: 0;
+    display: block;
+    margin: 25px 20px;
+    font-size: 34px;
+  }
+
+  .nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 37px;
+    color: #ffffff;
+    padding: 10px;
+    margin: 15px;
+    width: max-content;
+  }
+  .nav .contact_btn {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    background: rgb(53, 53, 53);
+    border-radius: 10px;
+  }
+  .contact_li {
+    display: none;
+  }
+  .btn {
+    display: block;
+  }
+
+  .quote {
+    width: 290px;
+    font-size: 25px;
+  }
+  .footer .quick {
+    display: none;
+  }
+  .foot_logo a,
+  .foot_logo p {
+    font-size: 8px;
+    text-align: right;
+  }
+  .footer h1 {
+    font-size: 16px;
+  }
+  .footer h2 {
+    font-size: 10px;
+  }
+}
