@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth !important;
+  }
 .navi{
     justify-content: space-between;
   }
