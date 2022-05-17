@@ -20,6 +20,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+main{
+  margin-top: 80px;
+}
 
 h1 {
   font-size: 120px;

@@ -30,22 +30,26 @@
     <script type="module" src="./source/script/component.js"></script>
   </head>
   <body>
-    <header class="bgblack">
-      <nav class="nav flex align-centre justify-spbt nav-pad">
-        <div class="ham absolute"></div>
+    <header data-aos="fade-down">
+      <div class="ham">
+          <div class="hambar"></div>
+      </div>
 
-        <label class="logo">incrix</label>
-        
-        <div class="navli ">
-            <a class="li1 pad-hori30 white reem-kulfi font20" href="../../index.html">Home</a></li>
-            <a class="li1 pad-hori30 white reem-kulfi font20" href="../../about.html">About</a>
-            <a class="li1 pad-hori30 white reem-kulfi font20" href="">Services</a>
-            <a class="li1 pad-hori30 white reem-kulfi font20" href="https://blog.incrix.com/">Insights</a>
-            <a class="li1 pad-hori30 white reem-kulfi font20" href="https://education.incrix.com/">Education</a>
-            <div class="contact_btn"><a class="btn  white reem-kulfi font20" href="../../contact.html">Contact Us</a></div>
-          </div>
-          <div class="contact_btn"><a class="btn  white reem-kulfi font20" href="../../contact.html">Contact Us</a></div>
-      </nav>
+       <label class="logo">incrix</label>
+      <div class="nav">
+          <a href="./index.html">Home</a></li>
+          <a href="#">About</a>
+          <a href="./service.html">Services</a>
+          <a href="https://blog.incrix.com/">Insights</a>
+          <a href="https://education.incrix.com/">Education</a>
+         
+          <div class="contact_btn"><a class="btn" href="./contact.html">Contact Us</a></div>
+      
+      </div>
+          
+      <div class="contact_li">
+          <div id="contact_btn"><a href="./contact.html">Contact Us</a></div>
+      </div>
   </header>
 
 
@@ -168,7 +172,7 @@
                 <li>
                     <div class="flex spacebw paddingLeft">
                         <a class="linksb">Education</a>
-                        <img src="../../source/images/arrow.svg" alt="">
+                        <img src="../source/images/arrow.svg" alt="">
                     </div>
                     
                 </li>
@@ -184,7 +188,7 @@
         </div>
 
         </div>
-        <div class="footer ">
+        <div class="footer">
             <div class="btns flex column paddingLeft">
                 <div class="btnli ">
                     <a class="btlink gray" href="">Home</a>
@@ -203,5 +207,6 @@
             </div>
         </div>
     </main>
+    <script src="../../source/script/index.js"></script>
   </body>
 </html>
