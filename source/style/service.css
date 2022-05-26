@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.text{
+    width: 100%;
+    height: 100%;
+
+}
+.colorText{
+    display: inline-block;
+    position: relative;
+    color: #000;
+    background: white;
+    mix-blend-mode: multiply;
+}
+.colorText:before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: conic-gradient(from 259.68deg at 106.86% 49.78%, #FF3D00 0deg, #0085FF 360deg);
+    mix-blend-mode: screen;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.tiles{
+    width: 100%;
+    height: 100vh;
+}
+.tile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+}
+
+.flex{
+    display: flex;
+    
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* gap: 10px; */
+    background-color: #000000;
+    
+}
+.grid-container > a{
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+} 
