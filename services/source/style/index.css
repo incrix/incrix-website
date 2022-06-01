@@ -245,6 +245,22 @@ span{
 .pri{
   float: right;
 }
+.incrixp{
+  background-image: linear-gradient(
+    90deg,
+    #d7e2f3 0%,
+    #f8afb6 30%,
+    #dd5283 40%,
+    #ba75e0 60%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+  font-size: 30px;
+  text-decoration: solid;
+}
+
 
 @media only screen and (max-width:912px)
 {
